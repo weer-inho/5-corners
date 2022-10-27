@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+picture {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+article {
+  margin: 0;
+  padding: 0;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.add {
+  padding-top: 24px;
+}
+@media (min-width: 660px) and (max-width: 960px) {
+  .add {
+    display: grid;
+    min-height: 618px;
+    width: 660px;
+    margin: auto;
+    background-image: url("../../img/phone-tablet.png");
+    background-position: 0 bottom;
+    background-repeat: no-repeat;
+    grid-template-rows: 215px 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-size: 660px 545px;
+  }
+}
+@media (min-width: 660px) and (max-width: 960px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (max-width: 960px) and (min-resolution: 2dppx) {
+  .add {
+    background-image: url("../../img/phone-tablet@2x.png");
+    background-position: -2px bottom;
+    background-size: 643px 545px;
+  }
+}
+@media (min-width: 960px) {
+  .add {
+    width: 940px;
+    min-height: 743px;
+    background-image: url("../../img/phone-desktop.png");
+    background-position: 16px bottom;
+    background-repeat: no-repeat;
+    background-size: 1050px 645px;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 311px 1fr;
+    margin: auto auto 0;
+    padding: 0;
+  }
+}
+@media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 960px) and (min-resolution: 2dppx) {
+  .add {
+    background-image: url("../../img/phone-desktop@2x.png");
+  }
+}
+.add__wrapper {
+  min-height: 315px;
+  background-image: url("../../img/hand phone mobile.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 320px 286px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .add__wrapper {
+    background-image: url("../../img/hand phone mobile@2x.png");
+  }
+}
+@media (min-width: 660px) and (max-width: 960px) {
+  .add__wrapper {
+    grid-row-start: 1;
+    grid-row-end: -1;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: 33px 105px;
+    background-size: 195px 346px;
+  }
+}
+@media (min-width: 960px) {
+  .add__wrapper {
+    order: 2;
+    background-image: none;
+    background-position: 173px 143px;
+    background-size: 230px 408px;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    grid-column-start: 2;
+    grid-column-end: -1;
+  }
+}
+.add__text {
+  font-family: "Open Sans Light", "Arial", serif;
+  font-size: 24px;
+  line-height: 120%;
+  color: #ffffff;
+  width: 280px;
+  margin: 0 auto 0;
+  text-align: center;
+}
+@media (min-width: 660px) and (max-width: 960px) {
+  .add__text {
+    font-size: 40px;
+    margin: 69px 0 0 46px;
+    width: 247px;
+  }
+}
+@media (min-width: 960px) {
+  .add__text {
+    font-size: 50px;
+    margin: 99px 0 0 0;
+    line-height: 138%;
+    width: 300px;
+  }
+}
+.add__access {
+  display: grid;
+  grid-template-rows: 87px 78px 50px;
+  background-color: #1d2631;
+  min-height: 271px;
+  padding: 28px 20px 0;
+  text-align: center;
+}
+@media (min-width: 660px) and (max-width: 960px) {
+  .add__access {
+    background-color: transparent;
+    grid-template-rows: 101px 89px 50px;
+  }
+}
+@media (min-width: 960px) {
+  .add__access {
+    background-color: transparent;
+    padding: 29px 0 0 0;
+    grid-template-rows: 122px 108px 50px;
+  }
+}
+.add__download {
+  width: 280px;
+  height: 55px;
+  margin: 0 auto;
+  padding: 12px 0 0 0;
+  background-color: #1d2631;
+  font-family: "Open Sans Bold", "Arial", serif;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 30px;
+  border: 3px solid #ffffff;
+  text-decoration: none;
+}
+@media (min-width: 660px) and (max-width: 960px) {
+  .add__download {
+    background-color: transparent;
+    width: 300px;
+  }
+}
+@media (min-width: 960px) {
+  .add__download {
+    background-color: transparent;
+    width: 300px;
+    font-size: 21px;
+    margin: 0 auto 0 0;
+    padding: 10px 0 0 0;
+  }
+}
+.add__download:hover {
+  background-color: #ffffff;
+  color: #D22856;
+  transition: 0.5s;
+}
+.add__download:active {
+  background-color: #ffffff;
+  color: rgba(210, 40, 86, 0.3);
+  transition: 0.2s;
+}
+.add__icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 0;
+  height: 55px;
+  width: 204px;
+}
+@media (min-width: 660px) and (max-width: 960px) {
+  .add__icons {
+    width: 207px;
+  }
+}
+@media (min-width: 960px) {
+  .add__icons {
+    margin: 0 auto 0 48px;
+  }
+}
+.add__android-icon {
+  margin: 6px 0 0 0;
+}
+@media (min-width: 660px) and (max-width: 960px) {
+  .add__android-icon {
+    margin: 8px 0 0 0;
+  }
+}
+.add__microsoft-icon {
+  margin: 12px 0 0 0;
+}
+@media (min-width: 660px) and (max-width: 960px) {
+  .add__microsoft-icon {
+    margin: 9px 4px 0 0;
+  }
+}
+@media (min-width: 960px) {
+  .add__microsoft-icon {
+    margin: 12px 4px 0 0;
+  }
+}
+.add__available {
+  font-family: "Open Sans Light", "Arial", serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  width: 280px;
+  margin: 0 auto;
+}
+@media (min-width: 660px) and (max-width: 960px) {
+  .add__available {
+    font-size: 18px;
+    width: 300px;
+  }
+}
+@media (min-width: 960px) {
+  .add__available {
+    font-size: 18px;
+    width: 300px;
+    margin: 0 auto 0 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
